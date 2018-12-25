@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ;
+  display: grid;
+  /* grid-template-areas:
+    'nav search'
+    'nav '
+    'nav '
+    'nav ' */
+
+}
+
+.nav {
+  background-color: #e0474c;
+  /* grid-area: nav; */
+}
+
+.nav__profile--pic {
+  background-image: url("./assets/heygirlteacher.jpg");
+  background-position: center;
+  background-position-x: .3rem;
+  background-position-y: -2.1rem;
+  /* background-repeat: no-repeat; */
+  background-size: 6.3rem;
+  border-radius: 61%;
+  height: 5rem;
+  width: 5rem;
+}
+
+.nav__profile--menu {
+    color: #FFF;
+}
+
+.nav__profile--menu::after {
+  background-image: url("./assets/arrow.png");
+  background-size: .75rem;
+  content: "";
+  display: inline-block;
+  height: .75rem;
+  transform: rotate(90deg);
+  width: .75rem;
+}
