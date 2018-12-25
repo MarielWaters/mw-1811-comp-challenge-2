@@ -8,6 +8,7 @@
 
 body {
   font-family: ;
+  border: 2px green solid;
 }
 
 .main-container {
@@ -58,4 +59,40 @@ body {
 
 .search-container {
   grid-area: search;
+}
+
+.option-container {
+  grid-area: options;
+}
+
+.title-container {
+  grid-area: title;
+}
+
+.tool-container {
+  grid-area: tools;
+}
+
+.tab-container {
+  grid-area: tabs;
+}
+
+.data-container {
+  grid-area: data;
+}
+
+.info-container {
+  grid-area: info;
+}
+
+.link-container {
+  grid-area: link;
+}
+
+.widget-container {
+  grid-area: widget;
+}
+
+.upload-container {
+  grid-area: upload;
 }
