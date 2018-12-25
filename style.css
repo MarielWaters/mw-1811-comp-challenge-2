@@ -8,18 +8,25 @@
 
 body {
   font-family: ;
-  display: grid;
-  /* grid-template-areas:
-    'nav search'
-    'nav '
-    'nav '
-    'nav ' */
+}
 
+.main-container {
+  display: grid;
+  grid-column: 10% 45% auto;
+  grid-row: auto;
+  grid-template-areas:
+    'nav search options'
+    'nav title tools'
+    'nav tabs tabs'
+    'nav data data'
+    'nav info link'
+    'nav info widget'
+    'nav info upload'
 }
 
 .nav {
   background-color: #e0474c;
-  /* grid-area: nav; */
+  grid-area: nav;
 }
 
 .nav__profile--pic {
@@ -30,6 +37,7 @@ body {
   /* background-repeat: no-repeat; */
   background-size: 6.3rem;
   border-radius: 61%;
+  display: table;
   height: 5rem;
   width: 5rem;
 }
@@ -46,4 +54,8 @@ body {
   height: .75rem;
   transform: rotate(90deg);
   width: .75rem;
+}
+
+.search-container {
+  grid-area: search;
 }
