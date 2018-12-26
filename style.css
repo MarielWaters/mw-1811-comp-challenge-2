@@ -115,16 +115,41 @@ body {
   grid-area: option3;
 }
 
-.title-container {
-  grid-area: title;
+
+
+
+
+.job-container {
+  display: grid;
+  grid-template-areas:
+    "job-post open bookmark edit trash"
 }
 
-.tool-container {
-  grid-area: tools;
+.job__post {
+  display: flex;
+  grid-area: job-post;
 }
+
+.tool--open {
+  grid-area: open;
+}
+
+.tool--bookmark {
+  grid-area: bookmark;
+}
+
+.tool--edit {
+  grid-area: edit;
+}
+
+.tool--trash {
+  grid-area: trash;
+}
+
+
 
 .tab-container {
-  grid-area: tabs;
+  display: flex;
 }
 
 .data-container,
@@ -136,8 +161,19 @@ body {
 }
 
 .data-container {
+  display: grid;
+  grid-template-areas:
+    "circle-chart bar-graph"
+}
+
+.data__circle-chart--container {
   display: flex;
-  grid-area: data;
+  grid-area: circle-chart;
+}
+
+.data__bar-graph--container {
+  display: flex;
+  grid-area: bar-graph;
 }
 
 .data__circle-chart {
