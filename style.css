@@ -8,10 +8,10 @@
 
 body {
   font-family: ;
-  border: 2px green solid;
 }
 
 .main-container {
+  border: 2px green solid;
   display: grid;
   grid-column: 10% 45% auto;
   grid-row: auto;
