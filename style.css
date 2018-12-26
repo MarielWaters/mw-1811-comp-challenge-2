@@ -153,10 +153,7 @@ body {
 }
 
 .data-container,
-.info-container,
-.link-container,
-.widget-container,
-.upload-container {
+.details-container{
   background-color: #7acfd6;
 }
 
@@ -187,18 +184,34 @@ body {
   width: 14rem;
 }
 
+.details-container {
+  display: grid;
+  grid-template-areas:
+    "info social";
+  grid-template-columns: 60% 30%;
+  justify-content: space-around;
+}
+
 .info-container {
+  background-color: #FFF;
   grid-area: info;
 }
 
-.link-container {
-  grid-area: link;
+.info__list {
+  display: flex;
+  list-style-type: none;
 }
 
-.widget-container {
-  grid-area: widget;
+.item-category {
+  text-transform: uppercase;
 }
 
-.upload-container {
-  grid-area: upload;
+.job-description {
+  background-color: #e0474c;
+}
+
+
+
+.social-container {
+  grid-area: social;
 }
