@@ -18,7 +18,7 @@ body {
 }
 
 .nav {
-  background-color: #b11a21;
+  background-color: #bb2025;
   display: flex;
   flex-direction: column;
   grid-area: nav;
@@ -27,6 +27,7 @@ body {
 
 .nav__profile-container {
   text-align: center;
+  color: #FFF;
 }
 
 .nav__profile--pic {
@@ -38,35 +39,39 @@ body {
   display: table;
   display: inline-block;
   height: 5rem;
+  margin-top: 1.5rem;
   width: 5rem;
 }
 
 .nav__profile--menu {
-    color: #FFF;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: .75rem;
+    letter-spacing: 1.25px;
+    margin: .5rem 0 1.25rem;
 }
 
 .nav__profile--menu::after {
   background-image: url("./assets/nav/arrow.png");
-  background-size: .75rem;
+  background-size: .5rem;
   content: "";
   display: inline-block;
-  height: .75rem;
+  height: .5rem;
   transform: rotate(90deg);
-  width: .75rem;
+  width: .5rem;
 }
 
 .nav__main-container,
 .nav__admin-container,
 .nav__categories-container {
-  border-top: 2px solid #e0474c;
+  border-top: 2px solid #7a1518;
 }
 
 .nav__list {
   color: #f1f0ee;
   font-size: .5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  line-height: 2rem;
   list-style-type: none;
   margin: 1rem;
   text-transform: uppercase;
@@ -79,6 +84,17 @@ body {
   width: 1rem;
   background-size: 1rem;
   margin-right: .5rem;
+  vertical-align: text-bottom;
+}
+
+.nav__list--item {
+  vertical-align: middle;
+}
+
+.nav__main {
+  color: #eb888c;
+  font-size: .6rem;
+  text-transform: capitalize;
 }
 
 .li--school::before {
@@ -94,7 +110,7 @@ body {
   background-image: url("./assets/nav/apple-books.png");
 }
 
-.li--unpaid-overtime::before  {
+.li--lost-wages::before  {
   background-image: url("./assets/nav/money.png");
 }
 
