@@ -11,7 +11,6 @@ body {
 }
 
 .main-container {
-  border: 2px green solid;
   display: grid;
   grid-column: 10% 45% auto;
   grid-row: auto;
@@ -26,7 +25,7 @@ body {
 }
 
 .nav {
-  background-color: #e0474c;
+  background-color: #b11a21;
   grid-area: nav;
 }
 
@@ -75,6 +74,14 @@ body {
 
 .tab-container {
   grid-area: tabs;
+}
+
+.data-container,
+.info-container,
+.link-container,
+.widget-container,
+.upload-container {
+  background-color: #7acfd6;
 }
 
 .data-container {
