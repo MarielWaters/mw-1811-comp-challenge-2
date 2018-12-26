@@ -33,14 +33,15 @@ body {
 .nav__profile--pic {
   background-image: url("./assets/nav/heygirlteacher.jpg");
   background-position-x: .3rem;
-  background-position-y: -2.1rem;
-  background-size: 6.3rem;
+  background-position-y: 4.8rem;
+  background-size: 5.4rem;
   border-radius: 61%;
   display: table;
   display: inline-block;
   height: 5rem;
   margin-top: 1.5rem;
   width: 5rem;
+  border: 1.5px solid #7a1518;
 }
 
 .nav__profile--menu {
@@ -91,7 +92,7 @@ body {
   vertical-align: middle;
 }
 
-.nav__main {
+.nav__title {
   color: #eb888c;
   font-size: .6rem;
   text-transform: capitalize;
@@ -100,7 +101,6 @@ body {
 .li--school::before {
   background-image: url("./assets/nav/school.png");
 }
-
 
 .li--supplies::before  {
   background-image: url("./assets/nav/pencil.png");
@@ -114,9 +114,35 @@ body {
   background-image: url("./assets/nav/money.png");
 }
 
-.li--data-or-die::before  {
+.li--document-or-die::before  {
+  background-image: url("./assets/nav/document.png");
+}
+
+.li--document-or-die {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.li--educators::before  {
   background-image: url("./assets/nav/gearhead.png");
 }
+
+.li--locations::before  {
+  background-image: url("./assets/nav/location.png");
+}
+
+.li--death-by-data::before  {
+  background-image: url("./assets/nav/death.png");
+}
+
+.li--existential-despair::before  {
+  background-image: url("./assets/nav/light-bulb.png");
+}
+
+.li--social::before  {
+  background-image: url("./assets/nav/drink.png");
+}
+
 
 
 
@@ -246,7 +272,8 @@ body {
 }
 
 .job-description {
-  background-color: #e0474c;
+  background-color: #eb888c;
+  /* background-color: #e0474c; */
 }
 
 
