@@ -12,32 +12,50 @@ body {
 
 .main-container {
   display: grid;
-  grid-column: 10% 45% auto;
-  grid-row: auto;
+  /* grid-column: 5% 45% auto; */
+  /* grid-row: auto; */
   grid-template-areas:
-    'nav search options'
-    'nav title tools'
+    'nav section';
+  grid-template-columns: 15% auto;
+    /* 'nav title tools'
     'nav tabs tabs'
     'nav data data'
     'nav info link'
     'nav info widget'
-    'nav info upload'
+    'nav info upload'; */
+    /* grid-template:
+    [row1-start] "nav search search options" [row1-end]
+    [row2-start] "nav title title tools" [row2-end]
+    [row3-start] "nav tabs tabs tabs" [row3-end]
+    [row4-start] "nav data data data" [row4-end]
+    [row5-start] "nav info info link" [row5-end]
+    [row6-start] "nav info info widget" [row6-end]
+    [row7-start] "nav title title upload" [row7-end]
+    / auto auto auto auto; */
 }
 
 .nav {
   background-color: #b11a21;
+  display: flex;
+  flex-direction: column;
   grid-area: nav;
+  justify-content: space-evenly;
+}
+
+.nav__profile-container {
+  text-align: center;
 }
 
 .nav__profile--pic {
   background-image: url("./assets/heygirlteacher.jpg");
-  background-position: center;
+  /* background-position: center; */
   background-position-x: .3rem;
   background-position-y: -2.1rem;
   /* background-repeat: no-repeat; */
   background-size: 6.3rem;
   border-radius: 61%;
   display: table;
+  display: inline-block;
   height: 5rem;
   width: 5rem;
 }
@@ -56,12 +74,45 @@ body {
   width: .75rem;
 }
 
+.nav__main-container,
+.nav__admin-container,
+.nav__categories-container {
+  border-top: 2px solid #e0474c;
+}
+
+.nav__list {
+  color: #f1f0ee;
+  text-transform: uppercase;
+}
+
+.section-container {
+  grid-area: section;
+}
+
 .search-container {
+  display: grid;
+  grid-template-areas:
+    'hamburger search option1 option2 option3'
+}
+
+.search__nav-hamburger {
+  grid-area: hamburger;
+}
+
+.search__input {
   grid-area: search;
 }
 
-.option-container {
-  grid-area: options;
+.option1 {
+  grid-area: option1;
+}
+
+.option2 {
+  grid-area: option2;
+}
+
+.option3 {
+  grid-area: option3;
 }
 
 .title-container {
