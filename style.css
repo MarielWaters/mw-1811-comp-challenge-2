@@ -85,7 +85,19 @@ body {
 }
 
 .data-container {
+  display: flex;
   grid-area: data;
+}
+
+.data__circle-chart {
+  border: 2px solid green;
+}
+.data__circle-chart--totals,
+.data__bar-graph--totals {
+  background-color: #f1f0ee;
+  border-radius: 23px;
+  height: 2rem;
+  width: 14rem;
 }
 
 .info-container {
